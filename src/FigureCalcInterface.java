@@ -23,6 +23,7 @@ public class FigureCalcInterface implements UserInterface{
                 System.out.printf("\n");
             }
         }
+        consoleEnter();
         scanMenuOptions();
     }
 
