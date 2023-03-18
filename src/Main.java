@@ -12,5 +12,9 @@ public class Main {
         */
 
         //Menu wyboru;
+        FigureCalcInterface fcInterface = new FigureCalcInterface();
+        fcInterface.startInterface();
+        fcInterface.scanMenuOptions();
+        fcInterface.endInterface();
     }
 }
