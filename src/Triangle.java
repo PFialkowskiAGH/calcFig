@@ -1,5 +1,3 @@
-import java.util.Locale;
-
 public class Triangle extends Figure implements Printable {
     double a, b, c;
 
@@ -13,7 +11,7 @@ public class Triangle extends Figure implements Printable {
     @Override
     public String toString()
     {
-        return "Boki trójkąta to: %.2f , %.2f , %.2f".formatted(a, b, c);
+        return "Trójkąt o bokach: %.2f , %.2f , %.2f".formatted(a, b, c);
     }
 
     //P=p(p−a)(p−b)(p−c)−−−−−−−−−−−−−−−−−√
@@ -31,7 +29,7 @@ public class Triangle extends Figure implements Printable {
     @Override
     public void print() {
         System.out.println(this);
-        System.out.println("Pole: %.2f".formatted(this.calculateAREA()));
-        System.out.println("Obwód: %.2f".formatted(this.calculatePerimeter()));
+        System.out.printf("Pole: %.2f%n", this.calculateAREA());
+        System.out.printf("Obwód: %.2f%n", this.calculatePerimeter());
     }
 }
