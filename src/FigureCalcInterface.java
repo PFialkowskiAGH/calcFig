@@ -74,7 +74,7 @@ public class FigureCalcInterface implements UserInterface{
             switch(scanner.nextInt())
             {
                 case 1:
-                    System.out.printf("Wybrałeś okrąg, podaj promień:\n");
+                    System.out.printf("Wybrałeś okrąg, w związku z tym program stworzy walec, podaj promień:\n");
                     userBase = new Circle(scanner.nextInt());
                     isSet = true;
                     break;
