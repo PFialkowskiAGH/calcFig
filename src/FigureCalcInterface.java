@@ -86,6 +86,11 @@ public class FigureCalcInterface implements UserInterface{
                 case 3:
                     System.out.printf("Wybrałeś trójkąt, podaj boki:\n");
                     userBase = new Triangle(scanner.nextInt(),scanner.nextInt(),scanner.nextInt());
+                    if ((((Triangle) userBase).a == ((Triangle) userBase).b) && (((Triangle) userBase).a == ((Triangle) userBase).c))
+                    {
+                        System.out.println("Stworzono trójkąt równoboczny, graniastosłup będzie prawidłowy\n");
+                    }
+                    else System.out.println("Nie stworzono trójkąt równoboczny, graniastosłup nie będzie prawidłowy\n");
                     isSet = true;
                     break;
                 default:
