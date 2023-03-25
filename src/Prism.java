@@ -11,14 +11,14 @@ public class Prism extends Figure implements Printable {
     @Override
     public String toString()
     {
-        return "Graniastosłup prawidłowy:\n Wysokość: %.2f\n Podstawa: %s".formatted(H, this.base.toString());
+        return "Graniastosłup prawidłowy:\n Wysokość: %.2f\n Podstawa: %s".formatted(H, base.toString());
     }
 
     @Override
-    double calculateAREA() { return this.base.calculateAREA() * H; }
+    double calculateAREA() { return base.calculateAREA() * H; }
 
     @Override
-    double calculatePerimeter() { return 2 * this.base.calculateAREA() + this.base.calculatePerimeter() * H; }
+    double calculatePerimeter() { return 2 * base.calculateAREA() + base.calculatePerimeter() * H; }
 
     @Override
     public void print() {
