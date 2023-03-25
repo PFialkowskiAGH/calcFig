@@ -1,8 +1,18 @@
+import java.util.Scanner;
+
 public class Triangle extends Figure implements Printable {
+    Scanner scanner = new Scanner(System.in);
     double a, b, c;
 
     //constructor
     public Triangle(double a, double b, double c) {
+        while (c >= a + b || b >= a + c || a >= b + c)
+        {
+            System.out.println("Trójkąt o takich bokach nie istnieje, podaj nowe boki");
+            a = scanner.nextInt();
+            b = scanner.nextInt();
+            c = scanner.nextInt();
+        }
         this.a = a;
         this.b = b;
         this.c = c;
