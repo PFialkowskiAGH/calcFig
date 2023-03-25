@@ -11,7 +11,7 @@ public class Prism extends Figure implements Printable {
     @Override
     public String toString()
     {
-        return "Graniastosłup prawidłowy:\n Wysokość: %.2f\n Podstawa: %s".formatted(H, base.toString());
+        return "Graniastosłup prawidłowy:\n Wysokość: %.2f\n Podstawa: %s".formatted(H, base);
     }
 
     @Override
